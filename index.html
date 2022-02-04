@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <!--NavBar-->
+    <div class="row" >
+      <div id="navbar">
+        <a href="#aboutCompanySection">About Company</a>
+        <a href="#productSection">Products</a>
+        <a href="#mailListSection">Mailing List</a>
+      </div>
+    </div>
+    <!--logo-->
+    <div class="row" id="aboutCompanySection">
+      <center>
+        <div class="col">
+            <div class="container">
+                <img src="littlebirdlogo.png" alt="Little Bird Handmade Toys Logo">
+                <div class="overlay">
+                  <div class="text">
+                    <p>Address: 43 Main St, Toms River, NJ 08753</p>
+                    <p>Phone: (717) 123-1234</p>
+                    <p>Store Hours:</p>
+                    <p>WEEKDAYS-7:00 AM to 4:30 PM</p>
+                    <p>SATURDAY-10:00 AM to 2:00 PM</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </center>
+    </div>
+    <!--About Owners and Company-->
+    <div class="row" >
+      <div class="col-md-4 mx-auto" id="owners">
+        <span>
+          <img
+            class="img1"
+            id="abt-img"
+            src="https://www3.pictures.mabelandmoxie.com/mp/tXTI2Ol3msdx.jpg"
+            alt="picture of the owners"
+          />
+        </span>
+      </div>
+      <div class= "col-md-8 mx-auto">
+        <span>
+          <p id="info-1">
+            You’re more than a customer to us – you’re a part of our family! We
+            love hearing stories of how your children and grandchildren are
+            playing with our toys. <br />
+            Visit us at our Toms River, NJ toy store! All of our toys are made
+            on-site at this location and you’ll find an old-fashioned toy store
+            with cozy corners to play and explore – and time for us to get to
+            know each other!
+          </p></span
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 mx-auto" id="abt-2">
+        <span>
+          <p id="info-2">
+            Our handcrafted classic, wooden toys are designed to bring out that
+            slowness in your home. From Planes, trains, automobiles and boats,
+            playsets, all of our wooden toys are designed to spark imagination.
+            The going may be a little slower, but oh the things you’ll see along
+            the way! <br />
+            Since 2018, Little Bird Toys has delighted families looking for
+            quality children’s toys. Our collection of heirloom quality products
+            are built to stand the test of time and to be enjoyed from sibling
+            to sibling and generation to generation.
+          </p>
+        </span>
+      </div>
+      <div class="col-md-4 mx-auto">
+        <span> 
+          <img
+            class="img2"
+            id="abt-img"
+            src="https://img1.wsimg.com/isteam/ip/53534782-3169-4d3e-af98-ba41450c7262/blob-0002.png/:/cr=t:2.83%25,l:2.83%25,w:94.34%25,h:94.34%25/rs=w:700,cg:true,m"
+            alt="picture of the shop"
+          />
+        </span>
+      </div>
+    </div>
+    <!--Random Testimonials-->
+    <div class="row">
+          <center><p id="press-quote">
+              "Great customer service and amazing toys from a family owned and managed
+              company!"
+          </p></center>
+    </div>
+    <!--Products-->
+    <center><h1 class="pt-3 pb-2" id="productSection">Products</h1></center>
+    <div class="row">
+      <!--Product 1-->
+      <div class="col-md-3" id="product">     
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel" 
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="plane1.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Airplane"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="plane2.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Airplane"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="plane3.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Airplane"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="panel">
+              <div id="accordionNav">
+                <div class="accordionPanel">
+                  <div class="accordion accordionPanelTab" id="woodenToyAirplane" onclick="WoodenToyAirplane();">Wooden Toy Airplane</div>
+                  <div class="accordionPanelContent" id="woodenToyAirplaneInfo">
+                    <p>
+                      <ul>
+                        <li>Wooden Airplane Toy. Defying gravity and soaring in the sky is every boys dream. Keep him dreaming big with this classic wooden airplane made by us, here at Little Bird Toys in Bound Brook, NJ.</li>
+                        <li>The airplane comes ready to fly with a kid-safe Natural Harvest Finish and a propeller that spins.</li>
+                        <li>The dimensions of the Airplane is approximately 3.5"H x 7"L x 7"W </li>
+                        <li>The Airplane Comes with Real Rolling Wheels and Spinning Propellers</li>
+                        <li>Made out of Solid Wood - Built to Last for a Lifetime of Play.</li>
+                        <li>Perfect Creative Gift for Toddlers</li>
+                        <li>Safe for Young Kids - Comes with a Non-Toxic Finish</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!--Product 2-->
+      <div class="col-md-3" id="product">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="train1.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Train"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="train5.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Train"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="train7.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Train"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="panel">
+            <div id="accordionNav">
+              <div class="accordionPanel">
+                <div class="accordion accordionPanelTab" id="woodenToyTrain" onclick="WoodenToyTrain();">Wooden Toy Train</div>
+                <div class="accordionPanelContent" id="woodenToyTrainInfo">
+                  <p>
+                    <ul>
+                      <li>A beautiful handmade wooden train set - Engine and three interchangeable cars</li>
+                      <li>Handmade detailed artwork made of real beech wood.</li>
+                      <li>Wonderful Christmas gift! Large size - 84 cm length, 11 height and 13 width</li>
+                      <li>Moving wheel mechanism.</li>
+                      <li>Fully ecological product, only natural materials. High quality and durable.</li>
+                      <li>Suitable for children from 3 years old Lots of fun guaranteed at any age!</li>
+                      <li>This set can be painted using wood paint.</li>
+                      <li>Theses toys are #timeless and can be passed down for generations to come.</li>
+                      <li>Please note that these toys have small parts that could break off if used inappropriately.</li>                        </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Product 3-->
+      <div class="col-md-3" id="product">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="block1.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Block Toy Set"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="block2.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Block Toy Set"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="block4.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Block Toy Set"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="panel">
+            <div id="accordionNav">
+              <div class="accordionPanel">
+                <div class="accordion accordionPanelTab" id="woodenBlockToySet" onclick="WoodenBlockToySet();">Wooden Block Toy Set</div>
+                <div class="accordionPanelContent" id="woodenBlockToySetInfo">
+                  <p>
+                    <ul>
+                      <li>High-Grade Quality: Hardwood blocks are sturdy, solid and safe for kids</li>
+                      <li>72 naturally finished and smooth-sanded hardwood blocks. Case size is 13” L x 12” W x 2” H.</li>
+                      <li>Packaged in a handsome, wooden storage crate for easy storage.</li>
+                      <li>Suitable for children ages 3 and up.</li>
+                      <li>Highly durable set for indoor or outdoor use including: lawns, patios, living rooms, preschools, kindergartens & anywhere else.</li>
+                      <li>Make your own dream castle anywhere.  Block play helps promote creativity, independent play, cooperative play, fine motor skills and hand-eye coordination.</li>
+                      <li>When building, children must consider proportions, symmetry, size and more, which benefit early cultivation of concepts.</li>
+                      <li>This product is conducive to your child's imagination, allowing various kinds of combinations to be built</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Product 4-->
+      <div class="col-md-3" id="product">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="car2.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Car"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="car3.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Car"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="car4.jpg"
+                class="d-block w-100"
+                alt="Picture of Wooden Toy Car"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="panel">
+              <div id="accordionNav">
+                  <div class="accordionPanel">
+                    <div class="accordion accordionPanelTab" id="woodenToyCar" onclick="WoodenToyCar();">Wooden Toy Car</div>
+                    <div class="accordionPanelContent" id="woodenToyCarInfo">
+                      <p>
+                        <ul>
+                          <li>Beautifully handcrafted wooden car. One-of-a-kind - (the photos included for this item may not be the actual car that you will receive).</li>
+                          <li>All cars are the same size and construction.</li>
+                          <li>Great toy that will inspire imaginative and active play. This car will be in your family for generations to come - think heirloom or keepsake.</li>
+                          <li>Handcrafted from a variety of domestic and exotic hardwoods including maple, oak, mahogany, cherry woods, etc., coated with clear lacquer to enhance and hold the natural wood color. All edges are rounded over and sanded for a silky smooth finish.</li>
+                          <li>Please be aware there may be choking hazards with small children. Toys have a few small parts that may break with excessive rough or improper use.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mailing List-->
+    <center>
+        <h1 class="pt-4" id="mailListSection">Join Our Mailing List!</h1>
+      <div class="row mx-auto" id="mail">
+        <div class="col-md-12">
+        <div class="contentWrapper">
+          <form action="" method="post" name="signUpForm" id="signUpForm">
+            <fieldset id="signUp">
+                <label for="nameField">Name:</label>
+                <input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
+                <br>
+                <label for="emailField">Email:</label>
+                <input id="emailField" name="emailField" type="text" class="textfield" value="JohnDoe@gmail.com" onFocus="clearEmail();" onBlur="resetEmail();">
+                <br>
+                <input id="submit" type="submit" name="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </center>
+
+    <footer class="footer">
+      <div class="row text-center">
+        <p><small>All Social Media:  @LittleBirdToyCo</small></p>
+        <small>
+          Copyright &copy; Little Bird Toys
+        </small>
+      </div>
+    </footer>
+
+  </div> 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    >
+    
+  </script>
+  <script src="main.js"></script>
+
+  </body>
+</html>
